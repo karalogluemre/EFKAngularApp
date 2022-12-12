@@ -1,1 +1,6 @@
-<app-layout></app-layout>
+<a [routerLink]="['']" routerLinkActive="router-link-active" >Home</a> <br>
+<a [routerLink]="['/products']" routerLinkActive="router-link-active" >Products</a><br>
+<a [routerLink]="['/basket']" routerLinkActive="router-link-active" >Basket</a><br>
+<a [routerLink]="['/admin/']" routerLinkActive="router-link-active" >Dashboard</a><br>
+<!-- <a [routerLink]="['/admin/customers']" routerLinkActive="router-link-active" >Customers</a> -->
+<router-outlet></router-outlet>
