@@ -1,7 +1,7 @@
-<ul>
- <li> <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a> </li>
- <li> <a [routerLink]="['products']" routerLinkActive="router-link-active" >Products</a></li>
- <li> <a [routerLink]="['dashbords']" routerLinkActive="router-link-active" >Dashboards</a></li>
- <li> <a [routerLink]="['customers']" routerLinkActive="router-link-active" >Customers</a></li>
- <li> <a [routerLink]="['orders']" routerLinkActive="router-link-active" >Orders</a></li>
-</ul>
+<mat-list role="list">
+    <a mat-list-item role="listitem" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+    <a mat-list-item role="listitem" [routerLink]="['products']" routerLinkActive="router-link-active">Products</a>
+    <a mat-list-item role="listitem" [routerLink]="['dashbords']" routerLinkActive="router-link-active">Dashboards</a>
+    <a mat-list-item role="listitem" [routerLink]="['customers']" routerLinkActive="router-link-active">Customers</a>
+    <a mat-list-item role="listitem" [routerLink]="['orders']" routerLinkActive="router-link-active">Orders</a>
+</mat-list>

@@ -6,11 +6,13 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CustomersComponent } from '../../components/customers/customers.component';
 import { RouterModule } from '@angular/router';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatListModule
    
   ],
   declarations: [ComponentsComponent,SidebarComponent,HeaderComponent,FooterComponent],
