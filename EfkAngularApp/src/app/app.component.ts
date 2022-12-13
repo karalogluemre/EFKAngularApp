@@ -9,9 +9,11 @@ import { CustomToastrService, ToastrMessageType, ToastrPosition } from './ui/ser
 })
 export class AppComponent {
   title = 'EfkAngularApp';
-  constructor(private toastr: CustomToastrService) {
-    toastr.message("Merhaba", "Emre", { messageType: ToastrMessageType.Info, position: ToastrPosition.TopCenter });
+  constructor() {
   }
+  //   constructor(private toastr: CustomToastrService) {
+  //   toastr.message("Merhaba", "Emre", { messageType: ToastrMessageType.Info, position: ToastrPosition.TopCenter });
+  // }
 }
 // $(document).ready(()=>{
 //   alert("asd");
