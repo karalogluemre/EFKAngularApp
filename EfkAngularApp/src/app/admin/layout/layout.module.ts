@@ -11,6 +11,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     ComponentsModule,
     RouterModule,
     MatSidenavModule
+    
   ],
   declarations: [LayoutComponent],
   exports:[

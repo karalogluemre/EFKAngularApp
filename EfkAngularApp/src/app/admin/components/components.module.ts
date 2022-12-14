@@ -6,13 +6,15 @@ import { ProductsModule } from './products/products.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { OrdersModule } from './orders/orders.module';
 
+
 @NgModule({
   imports: [
     CommonModule,
     CustomersModule,
     ProductsModule,
     DashboardModule,
-    OrdersModule
+    OrdersModule,
+
   ],
   declarations: [ComponentsComponent]
 })
