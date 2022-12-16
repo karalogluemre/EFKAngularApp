@@ -6,7 +6,7 @@ import { AlertifyService, MessageType, Position } from 'src/app/admin/services/a
 import { BaseComponent, SpinnerType } from 'src/app/base/base.component';
 import { List_products } from 'src/app/contracts/list_products';
 import { ProductsService } from 'src/app/services/common/models/products.service';
-
+declare var $: any
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -21,7 +21,7 @@ export class ListComponent extends BaseComponent implements OnInit, AfterViewIni
 
   }
 
-  displayedColumns: string[] = ['name', 'stock', 'price', 'createdDate', 'updatedDate'];
+  displayedColumns: string[] = ['name', 'stock', 'price', 'createdDate', 'updatedDate', "delete", "edit"];
 
   dataSource: MatTableDataSource<List_products> = null;
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -35,6 +35,11 @@ export class ListComponent extends BaseComponent implements OnInit, AfterViewIni
     }))
     this.dataSource = new MatTableDataSource<List_products>(allProducts.products);
     this.paginator.length = allProducts.totalCount;
+  }
+  delete(id, event) {
+    const img: HTMLImageElement = event.srcElement;
+    $(img.parentElement.parentElement).fadeOut(2000);
+
   }
   async pageChanged() {
     await this.getProducts();
